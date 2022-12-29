@@ -1,0 +1,451 @@
+/* This * means everything in my website */
+*{
+  /* this function is used when width and heaight is specified and using padding
+  and this could a problem */
+  box-sizing: border-box;
+}
+body{
+  background: #f9f7cf;
+  font-family: sans-serif;
+  font-size: 14px; /*conversion to perc is 87.5, 1px is 0.16%*/
+}
+/* this used to put the logo at the top in the header */
+.image img {
+   margin-left: 50px;
+   margin-top: 20px;
+   width: 80px;
+   height: 80px;
+   float: left;
+}
+/* This whole for the paragraph */
+.box p{
+  color: #30475e;
+  font-size: 300%;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  font-family: cursive;
+  text-align: center;
+  padding-top: 280px;
+  padding-left: 350px;
+  position: absolute;
+}
+.firstCircle{
+width: 70px;
+height: 70px;
+position: absolute;
+margin-top: 390px;
+margin-left: 500px;
+background-color: #ff0022;
+animation: moving 2s infinite linear;
+}
+.secondCircle{
+width: 70px;
+height: 70px;
+position: absolute;
+margin-top: 390px;
+margin-left: 500px;
+background-color: #ff0022;
+animation: moving 4s infinite linear;
+}
+@keyframes moving {
+  0%{
+    top: 0;
+    left:0;
+    border-radius: 50%;
+  }
+  25%{
+    top: 0;
+    left: 180px
+  }
+  50%{
+    top: 140px;
+    left: 180px;
+    border-radius: 50%;
+
+  }
+  75%{
+    top: 140px;
+    left: 0px;
+    border-radius: 50%;
+  }
+  100%{
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+}
+
+/* this is for the img */
+.box1 a img{
+     border-radius: 20px;
+     opacity: 100;
+     transition: 0.5s;
+     background-image:url("images/foodfood.jpg");
+     height: 605px;
+     width: auto;
+     width:auto;
+     display: block;
+     background-repeat: no-repeat;
+     background-size: cover;
+     cursor: pointer;
+     z-index: -1;
+}
+/* this is for the img */
+.box a img{
+      width: 50%;
+      height: 50%;
+     margin-left: 25%;
+     border-radius: 20px;
+     opacity: 100;
+     transition: 0.5s;
+
+}
+.box a{
+  cursor:pointer;
+  }
+   #Header{
+      width: 99%;
+     background:#aaaaaa;
+     padding: 20px;
+     border-radius: 20px;
+     font-weight: bolder;
+     text-align: right;
+     font-size: 180%;
+   }
+   #Header ul{
+     list-style-type: none;
+
+   }
+   #Header ul li{
+    display: inline;
+   }
+
+   #Header ul li a {
+     text-align: center;
+     text-decoration: underline;
+     color:#30475e;
+     cursor: pointer;
+   }
+   #Header ul li a:hover {
+     font-size: 120%;
+     border-radius: 10px;
+     background: #9ddfd3;
+     text-decoration: none;
+     color:#f2dcbb;
+   }
+   #menu{
+      background:#839b97;
+     top:0;
+     left: 0;
+     position: fixed;
+     /* this is used because when you open the page it will not show
+     int the first place */
+     width: 0;
+     height:35%;
+     border-radius: 10px;
+     overflow-x: hidden;
+     transition: 0.3s;
+   }
+   #menu ul{
+   border-radius: 20px;
+     width: 99%;
+     font-size: 110%;
+     text-align: center;
+
+  }
+  #menu ul li{
+    list-style-type: none;
+       padding: 10px;
+
+ }
+  #menu ul li a{
+          font-weight: bolder;
+          font-size: 120%;
+          color:#f2dcbb;
+          text-decoration: #30475e;
+          padding-left: 30px;
+          padding-right: 30px;
+          transition: 0.5s;
+        }
+  #menu ul li a:hover{
+          background: #cbbcb1;
+          transition: 0.5s;
+          border-radius: 10px;
+         }
+.cloasebutton{
+  /* its absolute not fixed so it can be in the corner or moves around the given div */
+  position: absolute;
+  top:0;
+  right: 0px;
+}
+.menu_image{
+  position: absolute ;
+  top:0;
+  left:20px;
+  bottom: 100px;
+}
+
+ .title{
+    text-align: center;
+  }
+
+
+   #Footer{
+     color: #31326f;
+     font-family: fantasy;
+     background: #aaaaaa;
+     padding: 5px;
+     border-radius: 20px;
+     text-align: center;
+     font-size: 99%;
+     bottom:0px;
+     /* The postion "absolute" function bascailly
+     makes the object to be tranparent or as if it's not there
+     and it goes on top of the text by default thats why u need
+     to use bottom,top.left,right in order to set it where you want
+     it to be at*/
+     position: absolute;
+     width: 99%;
+   }
+
+#left{
+  width:50%;
+  float: left;
+}
+#left input{
+  width:200px;
+  height:200px;
+  border-radius: 20px;
+  background: #9ddfd3;
+  margin-left: 60%;
+      margin-top: 50px;
+  cursor: pointer;
+    font-size: 300%;
+    color: #31326f;
+    font-weight: bolder;
+    border: solid;
+  }
+/* This is used to create the button to be at the button and on the right side */
+#right{
+  width:50%;
+  float: right;
+}
+#right input{
+    width:200px;
+    height:200px;
+    border-radius: 20px;
+    background: #9ddfd3;
+    cursor: pointer;
+    font-size: 300%;
+    color: #31326f;
+    font-weight: bolder;
+    margin-left: 10%;
+    margin-top: 50px;
+    border: solid;
+}
+.form{
+  background: #f2dcbb;
+  font-size: 210%;
+  position: absolute;
+  border-radius: 30px;
+  left: 35%;
+  bottom:30%;
+  padding:25px;
+  height: 210px;
+  }
+  .createNewUser{
+    height: 330px;
+    background: #f2dcbb;
+    font-size: 170%;
+    position: absolute;
+    border-radius: 30px;
+    left: 35%;
+    bottom:20%;
+    padding:30px;
+    color:#9ad3bc;
+    font-weight: bold;
+    font-style:italic;
+    }
+  .form label{
+      color: #9ad3bc;
+    font-style:italic;
+    text-align: center;
+    font-weight: bold;
+}
+.about{
+  font-size: 200%;
+  font-style: oblique;
+  font-family: monospace;
+  width:50%;
+  text-align: right;
+  margin-left: 300px;
+}
+.aboutsite{
+  width: 50%;
+  height: 50%;
+  text-align: justify;
+  background: #ffd5cd;
+  font-size: 120%;
+  margin-left: 40%;
+  font-style: oblique;
+  font-weight: lighter;
+color: #c56183;
+padding: 5px;
+}
+.foodimage img{
+  border: 5px solid #555555;
+  position: absolute;
+  bottom: 100px;
+  left:50px;
+  width:400px;
+  height: 350px;
+  border-radius: 30px;
+}
+.info{
+  width: 25%;
+  background-color:  #ffd5cd;
+  position: absolute;
+  left: 50%;
+  bottom: 25%;
+  font-size: 120%;
+  border: 10px solid #d6d2c4;
+}
+.info p{
+  font-style: oblique;
+  font-weight: lighter;
+color: #c56183;
+
+}
+.RegisterButton input{
+width: 120px;
+height: 20px;
+margin-left: 100px;
+margin-top: 5px;
+position: fixed;
+border-radius: 5px;
+background: #31326f;
+font-weight: bold;
+color:white;
+cursor: pointer;
+border-style:dotted;
+border-color: black;
+
+}
+.LoginButton input{
+width: 120px;
+height: 20px;
+margin-left: 100px;
+margin-top: 5px;
+position: fixed;
+border-radius: 5px;
+background: #31326f;
+font-weight: bold;
+color:white;
+cursor: pointer;
+border-style:dotted;
+border-color: black;
+}
+
+.FirstLogin a input {
+text-align: center;
+text-align: center;
+width: 200px;
+height: 45px;
+margin-left: 550px;
+margin-top: 10px;
+font-size:25px;
+position: fixed;
+border-radius: 5px;
+background: #31326f;
+font-weight: bold;
+color: white;
+display: block;
+cursor: pointer;
+border-style:dotted;
+border-color: black;
+}
+.labelFirstLogin{
+  margin-top: 20px;
+  display: block;
+  margin-left: 500px;
+}
+.image2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  width: 80%;
+}
+.food a img{
+  width: 143px;
+  height: 143px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+
+}
+.pic1 img{
+  width:100px;
+  height: 100px;
+  position: absolute;
+  top:20px;
+  left:150px;
+  border-radius: 10px;
+}
+.food1 h1{
+  color:#8f384d;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-style: italic;
+}
+.Ingredient1{
+  float: left;
+  margin-left: 50px;
+}
+.Ingredient1 h2{
+  color:#583d72;
+  font-weight: bold;
+  background: #ff8e71;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration:underline;
+  font-family: cursive;
+}
+.Ingredient1 ul li{
+  color:#534e52;
+  font-size: 100%;
+}
+.Instructions1{
+  float: right;
+}
+.Instructions1 h2{
+  color:#583d72;
+  font-weight: bold;
+  background: #ff8e71;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration:underline;
+  font-family: cursive;
+
+}
+.Instructions1 ol li{
+  color:#534e52;
+  font-size: 100%;
+}
+.video1 video{
+  width: 500px;
+  height:200px;
+  margin-left: 300px;
+  border-radius: 10px;
+}
+.rowLunch a img{
+  width: 200px;
+  height: 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
+}

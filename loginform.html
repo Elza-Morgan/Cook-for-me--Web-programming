@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="cook,for,me">
+    <meta name="description" content="cooking website">
+    <meta name="viewport" content="width=width-device, initial:1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="loginform.js"></script>
+  </head>
+
+  <body>
+
+    <!-- the is used to add the logo in the header -->
+      <div class="image">
+      <a href="home.html">
+      <img src="images/logo.jpg">
+      </a>
+    </div>
+      <div id="Header">
+            <ul>
+              <li><a href="LoginAndSub.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact Us</a></li>
+
+           </ul>
+       </div>
+
+    <form name="LoginandSubButton">
+      <div class="form">
+            <label>User Name: </label>
+            <input type="text" name="UserName" placeholder="Enter Your User Name">
+            <br>
+            <label>Password: </label>
+            <input type="password" name="Password" placeholder="Enter Your Password">
+            <div class="LoginButton">
+              <input type="button" value="Login" onclick="loginform();">
+            </div>
+            <br>
+            <label>Don't have an account?</label>
+            <br>
+            <div class="LoginButton">
+              <input type="button" value="Register" onclick="registerfor()">
+            </div>
+
+      </div>
+   </form>
+
+
+        <div id="Footer">
+            <p>
+              &copy; Elza and Youssef 2020
+            </p>
+        </div>
+
+</body>
+
+
+</html>

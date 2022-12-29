@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Registeration Page</title>
+  <meta name="keywords" content="cook,for,me">
+  <meta name="description" content="cooking website">
+  <meta name="viewport" content="width=width-device, initial:1.0">
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="RegistrationForm.js"></script>
+</head>
+
+<body>
+
+  <div class="image">
+    <a href="home.html">
+      <img src="images/logo.jpg" alt="logo">
+    </a>
+  </div>
+  <div id="Header">
+    <ul>
+      <li><a href="LoginAndSub.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- onsubmit="return registerval()" this is event is used when you
+click on the button it will call the function registerval() and it Must
+return true in order it does the action which is going to the next page(action="ConfirmationPage.html")
+method="post" this attribute it does the data transtions but not showing through the URL-->
+  <form onsubmit="return registerval()" method="post" name="registerform" action="ConfirmationPage.html">
+    <div class="createNewUser">
+      <label>User Name:*</label>
+      <input type="text" name="UserName" placeholder="Enter Your User Name">
+      <br>
+      <label>Password:*</label>
+      <input type="password" name="Password" placeholder="Enter Your Password">
+      <br>
+      <label>Email:*</label>
+      <input type="email" name="Email" placeholder="Enter Your Email">
+      <br>
+      <label>Age: </label>
+      <input type="number" name="Age" placeholder="Enter Your Age">
+      <br>
+      <label>Phone:*</label>
+      <input type="tel" name="Phone" placeholder="Enter Your Phone number">
+      <br>
+      <label>Favorite Food: </label>
+      <input type="text" name="Favorite_Food" placeholder="Enter Favorite Food">
+      <br>
+      <label>Found us through?</label>
+      <select>
+        <option>FaceBook</option>
+        <option>Google</option>
+        <option>Twitter</option>
+        <option>Instgram</option>
+      </select>
+      <br>
+      <div class="RegisterButton">
+        <!--  input type in form must be submit where it sends the data to
+         be valited -->
+        <input type="submit" value="Register">
+      </div>
+      <br>
+      <label>Already have an account?</label>
+      <div class="RegisterButton">
+        <input type="button" value="Login" onclick="loginform();">
+      </div>
+    </div>
+  </form>
+  <div id="Footer">
+    <p>
+      &copy; Elza and Youssef 2020
+    </p>
+  </div>
+</body>
+
+</html>

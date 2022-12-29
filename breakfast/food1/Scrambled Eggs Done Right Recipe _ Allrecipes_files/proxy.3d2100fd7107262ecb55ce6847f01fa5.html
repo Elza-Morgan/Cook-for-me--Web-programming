@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- saved from url=(0145)https://cdn.krxd.net/partnerjs/xdi/proxy.3d2100fd7107262ecb55ce6847f01fa5.html#!kxcid=H1gAR3V7&kxt=https%3A%2F%2Fwww.allrecipes.com&kxcl=cdn&kxp= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Proxy</title>
+  <script type="text/javascript" async="" src="./tag.aspx"></script><script type="text/javascript" src="./1b008fc9-b074-4b2e-8e4a-c1e1f07d344b"></script><script async="" src="./controltag.js.0631b7d64dbbd3656a8b7368ad227a04"></script><script type="text/javascript" async="" src="./H1gAR3V7.js.download"></script><script data-version="2">
+    window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]),Krux("proxy"),function(){var t=function(t){for(var r=t.split("&"),e={},n=0,c=r.length;c>n;++n){var i=r[n].split("=");e[i[0]]=i[1]}return e},r=/^[a-z0-9_-]+$/i,e=window.location.hash,n=t(e.slice(e.indexOf("!")+1));if(!n.kxcid||!r.test(n.kxcid))throw new Error("Invalid confid passed to proxy");n.kxcl&&r.test(n.kxcl)||(n.kxcl="cdn"),n.kxp&&/^[0-9]{1,5}$/.test(n.kxp)||(n.kxp="");var c=document.createElement("script");c.type="text/javascript",c.async=!0,c.src="//"+n.kxcl+".krxd.net"+(n.kxp?":"+n.kxp:"")+"/controltag/"+n.kxcid+".js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(c,i)}();
+  </script>
+<span class="kxtag kxinvisible" data-id="81"><script>
+
+(function () {
+_ml = window._ml || {};
+_ml.pub = '748';
+_ml.redirect = '//beacon.krxd.net/usermatch.gif?partner=madisonlogic&partner_uid=[PersonID]';
+var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
+mltag.type = 'text/javascript'; mltag.async = true;
+mltag.src = '//ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
+s.parentNode.insertBefore(mltag, s);
+})();
+
+</script></span><span class="kxtag kxinvisible" data-id="72"><script>
+(function(){
+  var kuid = Krux('get', 'user');
+  var cbust = Math.round(new Date().getTime() / 1000);
+  if (kuid) {
+    Krux('require:http').pixel({
+      url: "//ib.adnxs.com/pxj",
+      data: {
+          bidder: '140',
+          seg: '381342',
+          action: "setuid('" + kuid + "')",
+          bust: cbust
+      }});
+  }
+  })();
+</script></span><span class="kxtag kxinvisible" data-id="73"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=d7158cb7-a851-4e3c-b7ab-cc9e815b2399&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=gwjn34gwjnh86&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="83"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=8da8b14d-5569-4bec-bcea-722864ee8d06&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=iefs40iefsj26&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="84"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=bef9f122-393d-4c45-8d8d-32d8be7ac433&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=iyzu39iyzud95&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="87"><script>
+    (function() {
+        var allowUserMatch = function() {
+            var GDN_SITE_ID = '1282650';
+ 
+            if (Krux('get', 'config').params.client_type === 'marketer') {
+                try {
+                    var params = Krux('require:marketer').getParams(
+                            Krux('require:sizzle').find('script[src*="' + Krux('get', 'confid') + '"]')
+                    );
+                    return GDN_SITE_ID !== (params.siteid || params.kxsiteid);
+                }
+                catch (e) {
+                    // In case we don't find the script tag or the URL parser fails, just allow matching.
+                }
+            }
+            return true;
+        };
+         
+        var kuid = Krux('get', 'user');
+        if (allowUserMatch() && kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=8bf57916-aac8-4f01-a386-4baf103b3e1f&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=bckw15bckwu20&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="88"><script>
+    (function() {
+        var allowUserMatch = function() {
+            var GDN_SITE_ID = '1282650';
+
+            if (Krux('get', 'config').params.client_type === 'marketer') {
+                try {
+                    var params = Krux('require:marketer').getParams(
+                            Krux('require:sizzle').find('script[src*="' + Krux('get', 'confid') + '"]')
+                    );
+                    return GDN_SITE_ID !== (params.siteid || params.kxsiteid);
+                }
+                catch (e) {
+                    // In case we don't find the script tag or the URL parser fails, just allow matching.
+                }
+            }
+            return true;
+        };
+
+        var kuid = Krux('get', 'user');
+        if (allowUserMatch() && kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=d7158cb7-a851-4e3c-b7ab-cc9e815b2399&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=gwjn34gwjnh86&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="89"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=536f0daa-aaaa-4d9e-9a25-dde40646786a&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=iefs40iefsj26&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="90"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=7c6392c9-e878-492c-8b14-bf06e3828ebd&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=rowp70rowpu60&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="91"><script>
+    (function() {
+        var allowUserMatch = function() {
+            var GDN_SITE_ID = '1282650';
+
+            if (Krux('get', 'config').params.client_type === 'marketer') {
+                try {
+                    var params = Krux('require:marketer').getParams(
+                            Krux('require:sizzle').find('script[src*="' + Krux('get', 'confid') + '"]')
+                    );
+                    return GDN_SITE_ID !== (params.siteid || params.kxsiteid);
+                }
+                catch (e) {
+                    // In case we don't find the script tag or the URL parser fails, just allow matching.
+                }
+            }
+            return true;
+        };
+        
+        var kuid = Krux('get', 'user');
+        if (allowUserMatch() && kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=bb8ae0e2-9cd7-45b2-ad37-7737269627d8&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=rsxs71rsxsk73&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="92"><script>
+    (function() {
+        var allowUserMatch = function() {
+            var GDN_SITE_ID = '1282650';
+ 
+            if (Krux('get', 'config').params.client_type === 'marketer') {
+                try {
+                    var params = Krux('require:marketer').getParams(
+                            Krux('require:sizzle').find('script[src*="' + Krux('get', 'confid') + '"]')
+                    );
+                    return GDN_SITE_ID !== (params.siteid || params.kxsiteid);
+                }
+                catch (e) {
+                    // In case we don't find the script tag or the URL parser fails, just allow matching.
+                }
+            }
+            return true;
+        };
+         
+        var kuid = Krux('get', 'user');
+        if (allowUserMatch() && kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=afae52b8-1e27-4650-bd6a-ed7d982f5a6a&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=iqbg41iqbgj68&ru=' + kurl;
+            new Image().src = dlx_url;
+          
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="93"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=e70bc6e8-7d66-460e-b96d-cee26cf41add&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=oazw62oazwq13&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="94"><script type="text/javascript">
+(function(){
+
+	var kuid = Krux('get', 'user');
+	
+	if (kuid) {
+		var protocol = window.location.protocol == 'https:' ? 'https:' : 'http:'
+		var kurl = encodeURIComponent(protocol + '//beacon.krxd.net/usermatch.gif?partner=pubmatic&partner_uid=#PM_USER_ID');
+		var lurl = protocol + '//image6.pubmatic.com/AdServer/UCookieSetPug?rd=';
+		(new Image()).src = lurl + kurl;
+	} 
+ 
+})();
+</script></span></head><body>
+
+</body></html>
